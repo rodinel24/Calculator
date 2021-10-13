@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id ="@+id/linearLayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/tvUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:textSize="50sp"
+        android:layout_margin="3dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:gravity="end|bottom|center_vertical"
+        android:background="@color/black"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/llButtonContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="7"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="8"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonNine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="9"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="onOperator">
+        </Button>
+
+        //row 1 digits
+    </LinearLayout>
+    //row 2 digits
+    <LinearLayout
+        android:id="@+id/llButtonContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonFive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonTimes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="x"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="onOperator">
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+    //row 3 digits
+    <LinearLayout
+        android:id="@+id/llButtonContainer3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="onOperator">
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+    //row 4 digits
+    <LinearLayout
+        android:id="@+id/llButtonContainer4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="."
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="decimalPointClick">
+        </Button>
+        <Button
+            android:id="@+id/buttonZero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="CLR"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="clearClick">
+        </Button>
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="onOperator">
+        </Button>
+
+
+    </LinearLayout>
+    //row 5 digits
+    <LinearLayout
+        android:id="@+id/llButtonContainer5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="="
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:onClick="digit">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
